@@ -4,9 +4,9 @@ class User
     private $conn;
     private $table_name = 'users';
 
-    private $id;
-    private $name;
-    private $email;
+    public $id;
+    public $name;
+    public $email;
 
     public function __construct($db)
     {
@@ -22,7 +22,7 @@ class User
     }
     public function create()
     {
-        $query = 'SELECT INSERT INTO ' . $this->table_name . ' SET name=:name,email=:email';
+        $query = "INSERT INTO " . $this->table_name . " SET name=:name, email=:email";
         $stmt = $this->conn->prepare($query);
 
         $this->name = htmlspecialchars(strip_tags($this->name));
@@ -39,5 +39,3 @@ class User
 
 }
 
-
-?>

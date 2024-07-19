@@ -3,9 +3,9 @@
 class Database
 {
     private $host = 'localhost';
-    private $username = '';
+    private $username = 'root';
     private $password = '';
-    private $db_name = '';
+    private $db_name = 'test';
     private $conn;
 
     public function getConnection()
@@ -21,4 +21,3 @@ class Database
     }
 
 }
-?>

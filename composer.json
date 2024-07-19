@@ -1,0 +1,17 @@
+{
+    "name": "mglzar/php-mgjs",
+    "autoload": {
+        "psr-4": {
+            "Mglzar\\PhpMgjs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MG1382JS",
+            "email": "mahdiJs1382@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.10"
+    }
+}
